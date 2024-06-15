@@ -11,7 +11,6 @@ const Login = () => {
     }; 
    
     return ( 
-        // <div>jwe</div>
       <div className="container"> 
         <form onSubmit={handleSubmit} className="form"> 
           <h2>ورود</h2> 
