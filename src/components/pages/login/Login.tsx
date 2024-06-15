@@ -4,18 +4,16 @@ const Login = () => {
     const [email, setEmail] = useState(''); 
     const [password, setPassword] = useState(''); 
    
-    // const handleSubmit = (e) => { 
-    //   e.preventDefault(); 
-    //   // اینجا می‌توانید درخواست لاگین خود را ارسال کنید 
-    //   console.log('ایمیل:', email); 
-    //   console.log('رمز عبور:', password); 
-    // }; 
+    const handleSubmit = (e) => { 
+      e.preventDefault(); 
+      console.log('ایمیل:', email); 
+      console.log('رمز عبور:', password); 
+    }; 
    
     return ( 
         // <div>jwe</div>
       <div className="container"> 
-        <form  className="form"> 
-        {/* onSubmit={handleSubmit} */}
+        <form onSubmit={handleSubmit} className="form"> 
           <h2>ورود</h2> 
           <div className='inputGroup'> 
             <label htmlFor="email">ایمیل:</label> 
