@@ -12,7 +12,7 @@ const Login = () => {
    
     return ( 
       <div className="container"> 
-        <form onSubmit={handleSubmit} className="form"> 
+        <form className="form"> 
           <h2>ورود</h2> 
           <div className='inputGroup'> 
             <label htmlFor="email">ایمیل:</label> 
@@ -36,7 +36,7 @@ const Login = () => {
               className="input"
             /> 
           </div> 
-          <button type="submit" className="button">ورود</button> 
+          <button onClick={handleSubmit} type="submit" className="button">ورود</button> 
         </form> 
       </div> 
     ); 
