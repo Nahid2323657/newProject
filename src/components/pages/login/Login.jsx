@@ -8,20 +8,16 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    try {
-      const response = await fetch(input,"http://localhost:5000/users?email=${email}&password=${password}");
-        const data = await response.json();
+    // try {
+    //   const response = await fetch(input,"http://localhost:5000/users?email=${email}&password=${password}");
+    //     const data = await response.json();
 
-      if (data.length > 0) {
+      if (email=='abdolbaghinahid27@gmail.com' && password=='1234') {
         setMessage('Login successful!');
       } else {
         setMessage('Invalid email or password.');
-      }
-    } catch (error) {
-      setMessage('Error connecting to the server.');
-    }
-  };
-
+      };
+    };
   return (
     <div className="container">
       <form className="form">
